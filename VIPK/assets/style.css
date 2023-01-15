@@ -1,0 +1,190 @@
+.container{
+  width: 1400px;
+  margin: 0 auto;
+}
+header {
+    text-align: justify;
+    letter-spacing: 1px;
+    height: 10em;
+    padding: 2em 10%;
+    background:url(../assets/header.png);
+    color: #fff;
+}
+header h1,
+header div {
+    display: inline-block;
+    font-size: 20;
+}
+header::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+.topnav {
+    background-color: #557A8E;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.topnav .icon {
+    display: none;
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+
+/* Change background on mouse-over */
+.vertical-menu {
+    width: 300px;
+    margin-top:1%;
+    display:inline-block;
+    font-size: 17px;
+
+
+    /* Set a width if you like */
+}
+
+.vertical-menu a {
+    background-color:#B7DBEF;/* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 16px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+}
+.mob5{
+  display: flex;
+}
+.description{
+  font-size: 15px;
+  width: 70%;
+  margin-left: 5%;
+}
+.description h1{
+  color: #7BA2AD;
+}
+.description p{
+  color: #1C282B;
+}
+.carp{
+  margin-top: 3%;
+  display: flex;
+  margin-left: 5%;
+}
+div#card1 {
+position: relative;
+text-decoration: none;
+}
+.card1 {
+position: absolute;
+top: 50%;
+left: 65px;
+
+color: white;
+width: 250px;
+background: #F1F8FA;
+
+text-align: center;
+font: bold 24px/34px Helvetica, Sans-Serif;
+text-decoration: none;
+
+}
+.card1 a.text:active, /* активная/посещенная ссылка */
+a.text:hover,  /* при наведении */
+a.text {
+  text-decoration: none;
+  color:#276272;
+}
+.galery{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  margin-top: 3%;
+}
+.carousel-caption h1{
+  color:#192671;
+  font-family: 'Prosto One', cursive;
+}
+.carousel-caption h5{
+  color:#192671;
+  font-family: 'Prosto One', cursive;
+}
+.benefits{
+  width: 40%;
+  margin-left: 5%;
+  text-align: left;
+}
+.benefits p{
+  font-size: 20px;
+}
+.smd{
+  width: 60%;
+}
+.forstudent{
+  margin-top: 17%;
+  color:#276272;
+}
+form {
+    margin-top: 6%;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-left: 30%;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    border: unset;
+    border-bottom: 2px solid #e3e3e3;
+    outline: none;
+    font-size: 40px;
+}
+
+button {
+    padding: 10px;
+    background: #4682B4;
+    border: unset;
+    cursor: pointer;
+    font-size: 40px;
+}
